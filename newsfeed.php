@@ -1,0 +1,326 @@
+<?php
+	include('assets/php/config.php');
+?>
+
+<!doctype html>
+<html class="no-js " lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+
+		<title>:: BizPlug ::</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!-- Favicon-->
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<!-- Custom Css -->
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/timeline.css">
+		<link rel="stylesheet" href="assets/css/color_skins.css">
+	</head>
+	
+	<body class="theme-purple">
+		
+		<!-- Page Loader -->
+		<div class="page-loader-wrapper">
+			<div class="loader">
+				<div class="m-t-30"><img class="zmdi-hc-spin" src="assets/images/logo.svg" width="48" height="48" alt="InfiniO"></div>
+				<p>Please wait...</p>        
+			</div>
+		</div>
+		
+		<!-- Overlay For Sidebars -->
+		<div class="overlay"></div>
+
+<!-- Top Bar -->
+<nav class="top_navbar">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-12">
+                <div class="navbar-logo">
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" width="30" alt="InfiniO"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="" ><i class="icon-magnifier"></i></a></li>
+					<li class="dropdown notifications">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-bell"></i><span class="label-count">5</span></a>
+                        <ul class="dropdown-menu">
+                            <li class="header">New Message</li>
+                            <li class="body">
+                                <ul class="menu list-unstyled">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <img class="media-object" src="assets/images/xs/avatar5.jpg" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Alexander <span class="time">13min ago</span></span>
+                                                    <span class="message">Meeting with Shawn at Stark Tower by 8 o'clock.</span>                                        
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <img class="media-object" src="assets/images/xs/avatar6.jpg" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Grayson <span class="time">22min ago</span></span>
+                                                    <span class="message">You have 5 unread emails in your inbox.</span>                                        
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <img class="media-object" src="assets/images/xs/avatar3.jpg" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Sophia <span class="time">31min ago</span></span>
+                                                    <span class="message">OrderPlaced: You received a new oder from Tina.</span>                                        
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>                
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Isabella <span class="time">35min ago</span></span>
+                                                    <span class="message">Lara added a comment in Blazing Saddles.</span>                                        
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <img class="media-object" src="assets/images/xs/avatar8.jpg" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Sophia <span class="time">48min ago</span></span>
+                                                    <span class="message">OrderPlaced: You received a new oder from Tina.</span>                                        
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"> <a href="javascript:void(0);">View All</a> </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown profile">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <img class="rounded-circle" src="assets/images/profile_av.jpg" alt="User">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="user-info">
+                                    <h6 class="user-name m-b-0">Alizee Thomas</h6>
+                                    <p class="user-position">Available</p>
+                                    <a title="facebook" href="javascript:void(0);"><i class="zmdi zmdi-facebook"></i></a>
+                                    <a title="twitter" href="javascript:void(0);"><i class="zmdi zmdi-twitter"></i></a>
+                                    <a title="instagram" href="javascript:void(0);"><i class="zmdi zmdi-instagram"></i></a>
+                                    <a title="linkedin" href="javascript:void(0);"><i class="zmdi zmdi-linkedin-box"></i></a>
+                                    <a title="dribbble" href="javascript:void(0);"><i class="zmdi zmdi-dribbble"></i></a>
+                                    <a title="google plus" href="javascript:void(0);"><i class="zmdi zmdi-google-plus-box"></i></a>
+                                </div>
+                            </li>
+                            <hr>
+                            <li><a href="profile.html"><i class="icon-user m-r-10"></i> <span>My Profile</span> <span class="badge badge-success float-right">80%</span></a></li>
+                            <li><a href="javascript:void(0);"><i class="icon-notebook m-r-10"></i><span>Taskboard</span> <span class="badge badge-info float-right">New</span></a></li>
+                            <hr>
+                            <li><a href="locked.html"><i class="icon-lock m-r-10"></i><span>Locked</span></a></li>
+                            <li><a href="sign-in.html"><i class="icon-power m-r-10"></i><span>Sign Out</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+</nav>
+
+<!-- Right Sidebar -->
+<aside id="rightsidebar" class="right-sidebar">
+    <div class="slim_scroll">
+        <div class="card">
+            <h6>Skins</h6>
+            <ul class="choose-skin list-unstyled">
+                <li data-theme="purple" class="active">
+                    <div class="purple"></div>
+                </li>                   
+                <li data-theme="blue">
+                    <div class="blue"></div>
+                </li>
+                <li data-theme="cyan">
+                    <div class="cyan"></div>
+                </li>
+                <li data-theme="green">
+                    <div class="green"></div>
+                </li>
+                <li data-theme="orange">
+                    <div class="orange"></div>
+                </li>
+                <li data-theme="blush">
+                    <div class="blush"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="card theme-light-dark">
+            <h6>Theme Option</h6>
+            <button class="btn btn-default btn-block btn-round btn-simple t-light">Light</button>
+            <button class="btn btn-default btn-block btn-round t-dark">Dark</button>
+        </div> 
+        <div class="card">
+            <h6>General Settings</h6>
+            <ul class="setting-list list-unstyled">
+                <li>
+                    <div class="checkbox">
+                        <input id="checkbox1" type="checkbox">
+                        <label for="checkbox1">Report Panel Usage</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input id="checkbox2" type="checkbox" checked="">
+                        <label for="checkbox2">Email Redirect</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input id="checkbox3" type="checkbox" checked="">
+                        <label for="checkbox3">Notifications</label>
+                    </div>                        
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input id="checkbox4" type="checkbox" checked="">
+                        <label for="checkbox4">Auto Updates</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input id="checkbox5" type="checkbox" checked="">
+                        <label for="checkbox5">Offline</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input id="checkbox6" type="checkbox" checked="">
+                        <label for="checkbox6">Location Permission</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+<section class="content">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-lg-12">
+				
+				<?php
+				
+					$conn = new mysqli($host, $user, $pass, $db);
+
+					if ($conn->connect_error) {
+						die("Connection to database failed: " . $conn->connect_error);
+					}
+						
+				
+						// Fetch posts from the database
+						$query = "SELECT * FROM posts ORDER BY id DESC";
+						$result = $conn->query($query);
+
+						if ($result->num_rows > 0) {
+							while ($row = $result->fetch_assoc()) {
+								$postId = $row['id'];
+								
+								echo "<div class='card'>";
+								echo "<div class='header'>";
+								echo "<h2><a href='#' title=''><strong>" . $row['username'] . "</strong></a></h2>";
+								echo "<small>" . $row['post_date'] . " | " . $row['location'] ."</small><br>";
+								echo "<hr>";
+								echo "<p>" . $row['content'] . "</p>";
+								echo "<ul class='header-dropdown'>";
+								echo "<li class='dropdown'> <a href='javascript:void(0);' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'> <i class='zmdi zmdi-more'></i> </a>";
+								echo "<ul class='dropdown-menu dropdown-menu-right' x-placement='bottom-end' style='position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(33px, 34px, 0px);'>";
+                                echo "<li><a href='javascript:void(0);'>Action</a></li>";
+								echo "<li><a href='javascript:void(0);'>Another action</a></li>";
+                                echo "<li><a href='javascript:void(0);'>Something else</a></li>";
+								echo "</ul>";
+								echo "</li>";
+								echo "<li class='remove'>";
+                                echo "<a role='button' class='boxs-close'><i class='zmdi zmdi-close'></i></a>";
+								echo "</li>";
+								echo "</ul>";
+								echo "</div>";
+								echo "<div class='body'>";
+								echo "<div class='msg'>";
+								echo "<img class='w-25' src='assets/images/blog/blog-page-4.jpg' alt='Awesome Image'>";
+                                echo "<img class='w-25' src='assets/images/blog/blog-page-2.jpg' alt='Awesome Image'>";
+								echo "</div>";
+								echo "<hr>";
+								echo "<center><div class='row'>";
+								echo "<div class='col-4'>";
+                                echo "<h5 class='mb-0'>". $row['likes'] ."</h5>";
+                                echo "<small>Likes</small>";
+								echo "</div>";
+								echo "<div class='col-4'>";
+                                echo "<h5 class='mb-0'>". $row['comments'] ."</h5>";
+                                echo "<small>Comments</small>";
+								echo "</div>";
+								echo "<div class='col-4'>";
+								echo "<h5 class='mb-0'>". $row['views'] ."</h5>";
+                                echo "<small>Views</small>";
+								echo "</div></center>";
+								echo "</div>";
+								echo "</div>";
+								echo "</div>";
+								echo "</div>";
+						//echo "<a href='view_post.php?id=" . $postId . "'>View Details</a>";
+						
+					}
+				} else {
+					echo "<p>No posts available.</p>";
+				}
+
+				// Close the database connection
+				$conn->close();
+			?>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+
+<script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+<script>
+    // Function to load and update newsfeed
+    function loadNewsfeed() {
+        $.ajax({
+            url: 'assets/php/get_posts.php',
+            type: 'GET',
+            success: function(data) {
+                $('#newsfeed').html(data);
+            }
+        });
+    }
+
+    // Initial load
+    $(document).ready(function() {
+        loadNewsfeed();
+    });
+
+    // Periodic update (e.g., every 30 seconds)
+    setInterval(function() {
+        loadNewsfeed();
+    }, 30000);
+</script>
+</body>
+
+</html>
